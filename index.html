@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caro Boeri - Head of Analytics & Strategy</title>
+    <meta name="description" content="Caro Boeri - Head of Analytics & Strategy with 15+ years experience in data-driven transformation">
+    <meta name="keywords" content="analytics, data strategy, Caro Boeri, head of analytics, London">
+    <meta property="og:title" content="Caro Boeri - Head of Analytics & Strategy">
+    <meta property="og:description" content="Leading analytics innovation at Tasman Analytics">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #0f172a;
+            --navy-light: #1e293b;
+            --blue: #3b82f6;
+            --green: #15803d;
+            --green-light: #22c55e;
+            --gray: #64748b;
+            --light-gray: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--navy);
+            background: #f8fafc;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Left Column */
+        .left-column {
+            width: 35%;
+            background: var(--light-gray);
+            padding: 40px 30px;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-info {
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: var(--navy);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item:hover {
+            color: var(--green);
+        }
+
+        .contact-item svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--green);
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            color: var(--navy);
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section-content {
+            margin-bottom: 30px;
+        }
+
+        .certifications-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .certification-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cert-logo {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .project-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .project-company {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .company-logo {
+            width: 25px;
+            height: 25px;
+            background: var(--green);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .project-desc {
+            font-size: 0.9em;
+            color: var(--gray);
+        }
+
+        /* Right Column */
+        .right-column {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        .header .title {
+            font-size: 1.3em;
+            color: var(--green);
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .ai-chat-links {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .chat-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--navy);
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid var(--light-gray);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+
+        .chat-link:hover {
+            background: var(--green);
+            color: white;
+            border-color: var(--green);
+        }
+
+        .chat-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .experience-section {
+            margin-bottom: 40px;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .experience-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .experience-company {
+            color: var(--green);
+            font-weight: 500;
+        }
+
+        .experience-date {
+            color: var(--gray);
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        .experience-bullets {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .experience-bullets li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: var(--gray);
+        }
+
+        .experience-bullets li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Chat Button */
+        .chat-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .chat-button:hover {
+            transform: scale(1.1);
+            background: var(--navy);
+        }
+
+        .chat-button svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+
+        /* Chat Window */
+        .chat-window {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 380px;
+            height: 600px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            display: none;
+            flex-direction: column;
+            z-index: 999;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .chat-header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .chat-header-info h3 {
+            margin-bottom: 2px;
+        }
+
+        .chat-header-info p {
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+
+        .chat-close {
+            margin-left: auto;
+            cursor: pointer;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+
+        .chat-close:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f8fafc;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .message.bot {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .bot-avatar {
+            width: 35px;
+            height: 35px;
+            background: var(--green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .message-content {
+            background: white;
+            padding: 12px 16px;
+            border-radius: 18px;
+            max-width: 80%;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            line-height: 1.6;
+        }
+
+        .message.user .message-content {
+            background: var(--navy);
+            color: white;
+            margin-left: auto;
+        }
+
+        .chat-input {
+            padding: 20px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 25px;
+            outline: none;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .chat-input input:focus {
+            border-color: var(--green);
+        }
+
+        .chat-input button {
+            background: var(--green);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+
+        .chat-input button:hover {
+            background: var(--navy);
+        }
+
+        .quick-actions {
+            padding: 10px 20px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .quick-action {
+            padding: 6px 12px;
+            background: #f1f5f9;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quick-action:hover {
+            background: var(--green);
+            color: white;
+            border-color: var(--green);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .cv-container {
+                flex-direction: column;
+            }
+            
+            .left-column {
+                width: 100%;
+            }
+            
+            .chat-window {
+                width: 90%;
+                height: 70vh;
+                right: 5%;
+                bottom: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <div class="profile-section">
+                <img src="https://ui-avatars.com/api/?name=Caro+Boeri&background=15803d&color=fff&size=300" alt="Caro Boeri" class="profile-img">
+                <div class="contact-info">
+                    <a href="mailto:carolina.boeri@gmail.com" class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        carolina.boeri@gmail.com
+                    </a>
+                    <a href="https://uk.linkedin.com/in/carolinaboeridollberg" target="_blank" class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        LinkedIn
+                    </a>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        London, UK
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <h3 class="section-title">Certifications</h3>
+                
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: var(--navy); font-size: 1em; margin-bottom: 10px;">Marketing</h4>
+                    <div class="certifications-list">
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #1877f2; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">f</div>
+                            <div>
+                                <div style="font-weight: 600;">Facebook Blueprint</div>
+                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #4285f4; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">G</div>
+                            <div>
+                                <div style="font-weight: 600;">Google Ads</div>
+                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: var(--navy); font-size: 1em; margin-bottom: 10px;">Product</h4>
+                    <div class="certifications-list">
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #7856FF; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">M</div>
+                            <div>
+                                <div style="font-weight: 600;">Mixpanel</div>
+                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="color: var(--navy); font-size: 1em; margin-bottom: 10px;">BI & Analytics</h4>
+                    <div class="certifications-list">
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #4285f4; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">G</div>
+                            <div>
+                                <div style="font-weight: 600;">Google Analytics</div>
+                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #03EF62; color: black; display: flex; align-items: center; justify-content: center; border-radius: 5px;">D</div>
+                            <div>
+                                <div style="font-weight: 600;">DataCamp</div>
+                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #FF5A5F; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">O</div>
+                            <div>
+                                <div style="font-weight: 600;">Omni</div>
+                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <h3 class="section-title">Key Projects</h3>
+                <div class="projects-list">
+                    <div class="project-item" onclick="sendQuickMessage('Tell me about the Coty global expansion project')">
+                        <div class="project-company">
+                            <div class="company-logo">C</div>
+                            <span class="project-title">COTY: Global Expansion</span>
+                        </div>
+                        <div class="project-desc">Scaled from 1 to 15 offices in 11 months</div>
+                    </div>
+                    <div class="project-item" onclick="sendQuickMessage('Tell me about your analytics frameworks at Tasman')">
+                        <div class="project-company">
+                            <div class="company-logo">T</div>
+                            <span class="project-title">TASMAN: Analytics Excellence</span>
+                        </div>
+                        <div class="project-desc">3x productivity through frameworks</div>
+                    </div>
+                    <div class="project-item" onclick="sendQuickMessage('Tell me about the M&S digital transformation')">
+                        <div class="project-company">
+                            <div class="company-logo">M</div>
+                            <span class="project-title">M&S: Digital Strategy</span>
+                        </div>
+                        <div class="project-desc">35% engagement improvement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <div class="header">
+                <h1>CARO BOERI</h1>
+                <div class="title">Head of Analytics & Strategy</div>
+                <p class="intro-text">
+                    I'm excited to lead analytics transformation where I can bridge data science and business strategy. 
+                    Currently serving as Head of Analytics & Strategy at Tasman Analytics, where I lead the development 
+                    and implementation of analytics frameworks while building high-performing teams. My experience spans 
+                    15+ years across global brands in Beauty, Fashion, Travel, and Technology, with a focus on using 
+                    consumer data to enable superior decision-making. I'm passionate about democratizing data access 
+                    and fostering innovation through knowledge-sharing and mentorship.
+                </p>
+                <div class="ai-chat-links">
+                    <a href="#" class="chat-link" onclick="toggleChat(); return false;">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        Chat with my AI assistant
+                    </a>
+                    <a href="#" class="chat-link" onclick="sendQuickMessage('Tell me about your experience'); return false;">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/>
+                        </svg>
+                        Ask about my experience
+                    </a>
+                </div>
+            </div>
+
+            <div class="experience-section">
+                <h3 class="section-title">Professional Experience</h3>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Head of Analytics & Strategy</div>
+                            <div class="experience-company">Tasman Analytics, London</div>
+                        </div>
+                        <div class="experience-date">August 2019 - Present</div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Lead and drive the development and implementation of analytics frameworks that enable internal teams to work more efficiently with clients</li>
+                        <li>Develop and execute long-term analytics strategy aligned with Tasman's business objectives, ensuring company remains at forefront of data-driven innovation</li>
+                        <li>Recruit, develop, and lead high-performing team of data analysts and data product managers</li>
+                        <li>Contribute to business development efforts by identifying new opportunities and generating proposals</li>
+                        <li>Serve as trusted advisor to clients, providing strategic roadmaps driven by insights and recommendations based on their requirements combined with data analysis</li>
+                        <li>Help startup brands in Travel, Food and Fashion grow their paid social marketing through probability models and measurement frameworks</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">VP, Media & Performance Marketing</div>
+                            <div class="experience-company">Coty/Beamly, London</div>
+                        </div>
+                        <div class="experience-date">June 2016 - August 2019</div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Established blueprints and led RoW Media Digital teams across markets and divisions, improving campaign performance by 40%</li>
+                        <li>Expanded social media operations from 1 office to 15 offices managing 45+ markets within 11 months</li>
+                        <li>Defined programmatic, search, and social campaign management standards ensuring excellent delivery and optimization</li>
+                        <li>Built strategic partnerships with Facebook and other platforms to drive innovation in measurement and targeting</li>
+                        <li>Led team using consumer data to enable superior decision-making across creative assets and media investments</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Sr. Biddable Manager</div>
+                            <div class="experience-company">Mindshare UK, London</div>
+                        </div>
+                        <div class="experience-date">June 2015 - June 2016</div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Developed all digital communications for Marks & Spencer's business units, achieving 35% improvement in engagement</li>
+                        <li>Implemented campaigns and tested new platforms for M&S, Chanel, and River Island</li>
+                        <li>Created social listening reports with insights teams in London and Australia</li>
+                        <li>Conducted audience analysis to optimize paid campaigns and organic content strategies</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Digital Activation Manager</div>
+                            <div class="experience-company">OMD International TBWA, London</div>
+                        </div>
+                        <div class="experience-date">June 2015 - August 2015</div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Supervised the launch of new display campaigns across Western Europe for Apple</li>
+                        <li>Managed communications with production teams, publishers and the client</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Panregional Digital Marketing Manager</div>
+                            <div class="experience-company">FOX International Channels, Buenos Aires</div>
+                        </div>
+                        <div class="experience-date">July 2014 - June 2015</div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Developed strong digital strategies for each channel (FOX, National Geographic, FX, FOX Sports, Cinecanal, FilmZone, FOX Life, FOX Play, FOX +)</li>
+                        <li>Created optimization plans with continuous analysis using Google Analytics and Tableau</li>
+                        <li>Participated in FOXPlay product development, working across PR, Marketing Offline and Broadcast scheduling</li>
+                        <li>Built different user experiences for streaming platform across 6 markets and launched marketing campaigns</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Head of Performance</div>
+                            <div class="experience-company">IPG Media Brands, Buenos Aires</div>
+                        </div>
+                        <div class="experience-date">April 2013 - July 2014</div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Led strategy and coordination for major clients including Unilever, InBev, Microsoft, and Nissan</li>
+                        <li>Managed MAP's product suite: Reprise (Performance), Rally (Social), Cadreon (Programmatic)</li>
+                        <li>Connected organic and paid social activities, driving integrated campaign strategies</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Ecommerce Team Leader</div>
+                            <div class="experience-company">Global Mind, Buenos Aires</div>
+                        </div>
+                        <div class="experience-date">June 2011 - April 2013</div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Launched first social media campaign for LAN Airlines and Sony in US with Facebook teams</li>
+                        <li>Account manager for LAN Airlines, Garbarino, Sony, DIAGEO, CEPAS, Travelocity, Comafi and Galicia Banks</li>
+                        <li>Conducted ROI analysis and best practices for Garbarino (one of the biggest retailers in Argentina)</li>
+                        <li>Successfully managed accounts for top retail companies, aligning with KPIs and driving digital transformation</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Account Strategist</div>
+                            <div class="experience-company">Google, Buenos Aires</div>
+                        </div>
+                        <div class="experience-date">January 2010 - June 2011</div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Worked with SME businesses to develop their PPC offering</li>
+                        <li>Developed strategy campaigns and implementation for customers</li>
+                        <li>Search and Display optimization for improved campaign performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Button -->
+    <div class="chat-button" onclick="toggleChat()">
+        <svg viewBox="0 0 24 24">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+        </svg>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <img src="https://ui-avatars.com/api/?name=Caro+Boeri&background=15803d&color=fff" alt="Caro">
+            <div class="chat-header-info">
+                <h3>Chat with Caro</h3>
+                <p>Ask me anything about my experience!</p>
+            </div>
+            <div class="chat-close" onclick="toggleChat()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="bot-avatar">C</div>
+                <div class="message-content">
+                    Hi! I'm Caro's AI assistant. I can share detailed insights about her 15+ years in analytics and marketing leadership. What would you like to know?
+                </div>
+            </div>
+        </div>
+        
+        <div class="quick-actions">
+            <div class="quick-action" onclick="sendQuickMessage('What makes you different as a leader?')">Leadership style</div>
+            <div class="quick-action" onclick="sendQuickMessage('Tell me about a challenging project')">Key projects</div>
+            <div class="quick-action" onclick="sendQuickMessage('What analytics tools do you use?')">Technical skills</div>
+            <div class="quick-action" onclick="sendQuickMessage('How do you build teams?')">Team building</div>
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Ask about my experience, projects, or expertise..." onkeypress="if(event.key === 'Enter') sendMessage()">
+            <button onclick="sendMessage()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Enhanced Caro's professional information
+        const caroInfo = {
+            currentRole: {
+                title: "Head of Analytics & Strategy",
+                company: "Tasman Analytics",
+                duration: "August 2019 - Present"
+            }
+        };
+
+        // Response generation
+        function generateResponse(message) {
+            const lowerMessage = message.toLowerCase();
+            
+            if (lowerMessage.includes('leader') || lowerMessage.includes('different') || lowerMessage.includes('style')) {
+                return `My leadership philosophy centers on democratizing data and empowering teams:\n\n🌟 **Hands-on approach**: I work alongside my team on complex problems - not just delegating\n\n🌟 **Bridge builder**: I translate between technical teams and business stakeholders\n\n🌟 **Growth enabler**: Personalized development plans for each team member\n\n🌟 **Innovation catalyst**: Created knowledge-sharing forums at Tasman\n\nI believe great results come from engaged, empowered teams.`;
+            }
+            
+            if (lowerMessage.includes('coty') || lowerMessage.includes('global expansion')) {
+                return `The Coty global expansion showcased my ability to scale rapidly:\n\n📈 **Challenge**: Scale digital capabilities globally in record time\n\n🎯 **Solution**: Expanded from 1 to 15 offices managing 45+ markets in 11 months\n\n💡 **Results**: 40% campaign performance improvement, unified frameworks still in use\n\nThis taught me how to balance speed with quality when scaling operations.`;
+            }
+            
+            if (lowerMessage.includes('tool') || lowerMessage.includes('tech') || lowerMessage.includes('skill')) {
+                return `I leverage a comprehensive tech stack:\n\n📊 **Analytics**: Python, SQL, Tableau, Google Analytics\n📱 **Marketing**: Facebook Ads, Google Ads, Programmatic (DV360)\n☁️ **Cloud**: BigQuery, AWS, GitHub\n🎯 **Specialized**: Attribution modeling, A/B testing platforms\n\nI believe in choosing the right tool for each challenge.`;
+            }
+            
+            if (lowerMessage.includes('team') || lowerMessage.includes('build')) {
+                return `Building high-performing teams is central to my success:\n\n👥 Currently leading data analysts and product managers at Tasman\n📈 Scaled teams from 1 to 45+ markets at Coty\n🎯 Focus on growth and development\n💡 Created mentorship programs and knowledge-sharing forums\n\nI hire for potential and create environments where talent thrives.`;
+            }
+            
+            if (lowerMessage.includes('analytics frameworks') || lowerMessage.includes('tasman')) {
+                return `At Tasman, I've revolutionized how we deliver analytics:\n\n🚀 **Framework Development**: Created reusable solutions for efficient client work\n📊 **Strategy**: Long-term analytics strategy aligned with business objectives\n💡 **Innovation**: Keeping company at forefront of data-driven solutions\n🎯 **Business Development**: Identifying opportunities and generating proposals\n\nThese frameworks enable faster, more impactful client engagements.`;
+            }
+            
+            if (lowerMessage.includes('m&s') || lowerMessage.includes('marks')) {
+                return `The M&S project demonstrated integrated analytics power:\n\n🛍️ **Challenge**: Unify digital presence across all business units\n📊 **Solution**: Comprehensive digital communications and social listening\n✨ **Impact**: 35% engagement improvement\n\nThis showed how analytics bridges online and offline retail.`;
+            }
+            
+            if (lowerMessage.includes('challeng') || lowerMessage.includes('difficult')) {
+                return `FOXPlay streaming platform was my most complex challenge:\n\n🎯 **Challenge**: Launch in 6 markets with different regulations\n🔥 **Complexities**: Varied content rights, payment systems, user behaviors\n💡 **Solution**: Built different UX for each market\n📈 **Result**: Successfully launched across all markets\n\nThis proved that constraints often drive the most innovative solutions.`;
+            }
+            
+            if (lowerMessage.includes('experience') || lowerMessage.includes('background')) {
+                return `15+ years bridging analytics and marketing:\n\n🚀 **Current**: Head of Analytics at Tasman (2019-Present)\n📈 **Previous**: VP at Coty, Sr. Manager at Mindshare, Google alum\n🌍 **Global**: Worked across London, Buenos Aires, 45+ markets\n🎓 **Education**: Maths/Stats (Birkbeck), Marketing (UCES), Architecture (UBA)\n\nMy diverse background helps me approach problems creatively.`;
+            }
+            
+            return `I'd be happy to discuss my experience in analytics leadership, specific projects, or how I approach data-driven transformation. What aspect interests you most?`;
+        }
+
+        // Toggle chat
+        function toggleChat() {
+            const chatWindow = document.getElementById('chatWindow');
+            chatWindow.style.display = chatWindow.style.display === 'flex' ? 'none' : 'flex';
+            if (chatWindow.style.display === 'flex') {
+                document.getElementById('chatInput').focus();
+            }
+        }
+
+        // Send message
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            addMessage(message, 'user');
+            input.value = '';
+            
+            setTimeout(() => {
+                const response = generateResponse(message);
+                addMessage(response, 'bot');
+            }, 800);
+        }
+
+        // Quick message
+        function sendQuickMessage(message) {
+            const chatWindow = document.getElementById('chatWindow');
+            if (chatWindow.style.display !== 'flex') {
+                toggleChat();
+            }
+            
+            setTimeout(() => {
+                document.getElementById('chatInput').value = message;
+                sendMessage();
+            }, 100);
+        }
+
+        // Add message
+        function addMessage(text, sender) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            
+            if (sender === 'bot') {
+                messageDiv.innerHTML = `
+                    <div class="bot-avatar">C</div>
+                    <div class="message-content">${text.replace(/\n/g, '<br>')}</div>
+                `;
+            } else {
+                messageDiv.innerHTML = `<div class="message-content">${text}</div>`;
+            }
+            
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+    </script>
+</body>
+</html>
