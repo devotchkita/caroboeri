@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caro Boeri - Head of Analytics & Strategy</title>
-    <meta name="description" content="Caro Boeri - Head of Analytics & Strategy with 15+ years experience in data-driven transformation">
-    <meta name="keywords" content="analytics, data strategy, Caro Boeri, head of analytics, London">
-    <meta property="og:title" content="Caro Boeri - Head of Analytics & Strategy">
-    <meta property="og:description" content="Leading Data Analytics and Strategy at Tasman Analytics">
     <style>
         * {
             margin: 0;
@@ -101,6 +97,23 @@
 
         .section-content {
             margin-bottom: 30px;
+        }
+
+        .colleague-quote {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-style: italic;
+            color: var(--gray);
+            margin-bottom: 10px;
+            border-left: 4px solid var(--green);
+        }
+
+        .quote-author {
+            text-align: right;
+            color: var(--navy);
+            font-size: 0.9em;
+            font-style: normal;
         }
 
         .certifications-list {
@@ -503,6 +516,11 @@
             
             .left-column {
                 width: 100%;
+                order: 2; /* Move left column below on mobile */
+            }
+            
+            .right-column {
+                order: 1; /* Move right column (with name) to top on mobile */
             }
             
             .chat-window {
@@ -510,6 +528,16 @@
                 height: 70vh;
                 right: 5%;
                 bottom: 90px;
+            }
+            
+            .ai-chat-links {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .chat-link {
+                width: 100%;
+                justify-content: center;
             }
         }
     </style>
@@ -519,7 +547,7 @@
         <!-- Left Column -->
         <div class="left-column">
             <div class="profile-section">
-                <img src="caro.jpeg" alt="Caro Boeri" class="profile-img">
+                <img src="https://ui-avatars.com/api/?name=Caro+Boeri&background=15803d&color=fff&size=300" alt="Caro Boeri" class="profile-img">
                 <div class="contact-info">
                     <a href="mailto:carolina.boeri@gmail.com" class="contact-item">
                         <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -532,70 +560,6 @@
                     <div class="contact-item">
                         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                         London, UK
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-content">
-                <h3 class="section-title">Certifications</h3>
-                
-                <div style="margin-bottom: 20px;">
-                    <h4 style="color: var(--navy); font-size: 1em; margin-bottom: 10px;">Marketing</h4>
-                    <div class="certifications-list">
-                        <div class="certification-item">
-                            <div class="cert-logo" style="background: #1877f2; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">f</div>
-                            <div>
-                                <div style="font-weight: 600;">Facebook Blueprint</div>
-                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
-                            </div>
-                        </div>
-                        <div class="certification-item">
-                            <div class="cert-logo" style="background: #4285f4; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">G</div>
-                            <div>
-                                <div style="font-weight: 600;">Google Ads</div>
-                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="margin-bottom: 20px;">
-                    <h4 style="color: var(--navy); font-size: 1em; margin-bottom: 10px;">Product</h4>
-                    <div class="certifications-list">
-                        <div class="certification-item">
-                            <div class="cert-logo" style="background: #7856FF; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">M</div>
-                            <div>
-                                <div style="font-weight: 600;">Mixpanel</div>
-                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 style="color: var(--navy); font-size: 1em; margin-bottom: 10px;">BI & Analytics</h4>
-                    <div class="certifications-list">
-                        <div class="certification-item">
-                            <div class="cert-logo" style="background: #4285f4; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">G</div>
-                            <div>
-                                <div style="font-weight: 600;">Google Analytics</div>
-                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
-                            </div>
-                        </div>
-                        <div class="certification-item">
-                            <div class="cert-logo" style="background: #03EF62; color: black; display: flex; align-items: center; justify-content: center; border-radius: 5px;">D</div>
-                            <div>
-                                <div style="font-weight: 600;">DataCamp</div>
-                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
-                            </div>
-                        </div>
-                        <div class="certification-item">
-                            <div class="cert-logo" style="background: #FF5A5F; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">O</div>
-                            <div>
-                                <div style="font-weight: 600;">Omni</div>
-                                <a href="#" style="color: var(--green); font-size: 0.9em;">View</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -626,6 +590,64 @@
                     </div>
                 </div>
             </div>
+
+            <div class="section-content">
+                <h3 class="section-title">Certifications</h3>
+                
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: var(--navy); font-size: 1em; margin-bottom: 10px;">Marketing</h4>
+                    <div class="certifications-list">
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #1877f2; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">f</div>
+                            <div>
+                                <div style="font-weight: 600;">Facebook Blueprint</div>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #4285f4; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">G</div>
+                            <div>
+                                <div style="font-weight: 600;">Google Ads</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: var(--navy); font-size: 1em; margin-bottom: 10px;">Product</h4>
+                    <div class="certifications-list">
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #7856FF; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">M</div>
+                            <div>
+                                <div style="font-weight: 600;">Mixpanel</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 style="color: var(--navy); font-size: 1em; margin-bottom: 10px;">BI & Analytics</h4>
+                    <div class="certifications-list">
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #4285f4; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">G</div>
+                            <div>
+                                <div style="font-weight: 600;">Google Analytics</div>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #03EF62; color: black; display: flex; align-items: center; justify-content: center; border-radius: 5px;">D</div>
+                            <div>
+                                <div style="font-weight: 600;">DataCamp</div>
+                            </div>
+                        </div>
+                        <div class="certification-item">
+                            <div class="cert-logo" style="background: #FF5A5F; color: white; display: flex; align-items: center; justify-content: center; border-radius: 5px;">O</div>
+                            <div>
+                                <div style="font-weight: 600;">Omni</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Right Column -->
@@ -634,10 +656,13 @@
                 <h1>CARO BOERI</h1>
                 <div class="title">Head of Analytics & Strategy</div>
                 <p class="intro-text">
-                    With 15+ years of experience spanning global brands across Beauty, Fashion, Travel, and Technology, I bring a unique perspective to analytics leadership. 
-                    Having worked extensively on the end-user side before transitioning to a data - solution role, I deeply understand both the challenges businesses face and how to solve them through data. 
-                    As Head of Analytics & Strategy at Tasman Analytics, I leverage this dual perspective to build analytics frameworks that truly address client needs. 
-                    My passion lies in democratising data access and fostering innovation through knowledge-sharing and mentorship, ensuring teams can make informed decisions that drive real business impact.
+                    With 15+ years of experience spanning global brands across Beauty, Fashion, Travel, and Technology, 
+                    I bring a unique perspective to analytics leadership. Having worked extensively on the customer side 
+                    before transitioning to solution roles, I deeply understand both the challenges businesses face and 
+                    how to solve them through data. As Head of Analytics & Strategy at Tasman Analytics, I leverage this 
+                    dual perspective to build analytics frameworks that truly address client needs. My passion lies in 
+                    democratising data access and fostering innovation through knowledge-sharing and mentorship, ensuring 
+                    teams can make informed decisions that drive real business impact.
                 </p>
                 <div class="ai-chat-links">
                     <a href="#" class="chat-link" onclick="toggleChat(); return false;">
@@ -674,6 +699,13 @@
                         <li>Serve as trusted advisor to clients, providing strategic roadmaps driven by insights and recommendations based on their requirements combined with data analysis</li>
                         <li>Acting as a fractional CMO at Tasman to support our growth with new clients in the pipeline</li>
                     </ul>
+                    <div style="margin-top: 15px; padding-left: 25px; border-left: 3px solid var(--green); margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: var(--navy); margin-bottom: 10px;">Previously: Head of Growth</div>
+                        <ul class="experience-bullets" style="margin-bottom: 0;">
+                            <li>Focused on creating data strategies and marketing products for analysis</li>
+                            <li>Developed marketing frameworks for data-driven growth across multiple client verticals</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="experience-item">
@@ -686,11 +718,21 @@
                     </div>
                     <ul class="experience-bullets">
                         <li>Established blueprints and led RoW Media Digital teams across markets and divisions, improving campaign performance by 40%</li>
-                        <li>Expanded social media operations from 1 office to 15 offices managing 45+ markets within 11 months</li>
-                        <li>Defined programmatic, search, and social campaign management standards ensuring excellent delivery and optimization</li>
+                        <li>Expanded social media operations from 1 office to 5 offices managing 45+ markets within 11 months</li>
+                        <li>Defined programmatic, search, and social campaign management standards ensuring excellent delivery and optimisation</li>
                         <li>Built strategic partnerships with Facebook and other platforms to drive innovation in measurement and targeting</li>
                         <li>Led team using consumer data to enable superior decision-making across creative assets and media investments</li>
+                        <li>Worked with marketing and product analysts to run more complex projects with retailers</li>
+                        <li>Worked alongisde VP of Luxury at Coty to build Social media strategies for fashion houses for product launches</li>
                     </ul>
+                    <div style="margin-top: 15px; padding-left: 25px; border-left: 3px solid var(--green); margin-bottom: 15px;">
+                        <div style="font-weight: 600; color: var(--navy); margin-bottom: 10px;">Previously: Social Media Director</div>
+                        <ul class="experience-bullets" style="margin-bottom: 0;">
+                            <li>Managed teams and campaigns focused on social media (organic and paid) alongside content teams</li>
+                            <li>Collaborated with fashion houses for luxury brands as well as consumer beauty brands</li>
+                            <li>Developed integrated strategies across Coty's portfolio including prestige and mass market segments</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="experience-item">
@@ -705,37 +747,7 @@
                         <li>Developed all digital communications for Marks & Spencer's business units, achieving 35% improvement in engagement</li>
                         <li>Implemented campaigns and tested new platforms for M&S, Chanel, and River Island</li>
                         <li>Created social listening reports with insights teams in London and Australia</li>
-                        <li>Conducted audience analysis to optimize paid campaigns and organic content strategies</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <div class="experience-title">Digital Activation Manager</div>
-                            <div class="experience-company">OMD International TBWA, London</div>
-                        </div>
-                        <div class="experience-date">June 2015 - August 2015</div>
-                    </div>
-                    <ul class="experience-bullets">
-                        <li>Supervised the launch of new display campaigns across Western Europe for Apple</li>
-                        <li>Managed communications with production teams, publishers and the client</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <div class="experience-title">Panregional Digital Marketing Manager</div>
-                            <div class="experience-company">FOX International Channels, Buenos Aires</div>
-                        </div>
-                        <div class="experience-date">July 2014 - June 2015</div>
-                    </div>
-                    <ul class="experience-bullets">
-                        <li>Developed strong digital strategies for each channel (FOX, National Geographic, FX, FOX Sports, Cinecanal, FilmZone, FOX Life, FOX Play, FOX +)</li>
-                        <li>Created optimization plans with continuous analysis using Google Analytics and Tableau</li>
-                        <li>Participated in FOXPlay product development, working across PR, Marketing Offline and Broadcast scheduling</li>
-                        <li>Built different user experiences for streaming platform across 6 markets and launched marketing campaigns</li>
+                        <li>Conducted audience analysis to optimise paid campaigns and organic content strategies</li>
                     </ul>
                 </div>
 
@@ -782,6 +794,36 @@
                         <li>Worked with SME businesses to develop their PPC offering</li>
                         <li>Developed strategy campaigns and implementation for customers</li>
                         <li>Search and Display optimization for improved campaign performance</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Digital Activation Manager</div>
+                            <div class="experience-company">OMD International TBWA, London</div>
+                        </div>
+                        <div class="experience-date">June 2015 - August 2015</div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Supervised the launch of new display campaigns across Western Europe for Apple</li>
+                        <li>Managed communications with production teams, publishers and the client</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Panregional Digital Marketing Manager</div>
+                            <div class="experience-company">FOX International Channels, Buenos Aires</div>
+                        </div>
+                        <div class="experience-date">July 2014 - June 2015</div>
+                    </div>
+                    <ul class="experience-bullets">
+                        <li>Developed strong digital strategies for each channel (FOX, National Geographic, FX, FOX Sports, Cinecanal, FilmZone, FOX Life, FOX Play, FOX +)</li>
+                        <li>Created optimization plans with continuous analysis using Google Analytics and Tableau</li>
+                        <li>Participated in FOXPlay (streaming product) development, working across PR, Marketing Offline and Broadcast scheduling</li>
+                        <li>Built different user experiences for streaming platform across 6 markets and launched marketing campaigns</li>
                     </ul>
                 </div>
             </div>
@@ -842,7 +884,27 @@
             currentRole: {
                 title: "Head of Analytics & Strategy",
                 company: "Tasman Analytics",
-                duration: "August 2019 - Present"
+                duration: "August 2019 - Present",
+                achievements: [
+                    "47% revenue growth through predictive modeling",
+                    "3x team productivity improvement",
+                    "100+ users on self-serve BI platforms",
+                    "12+ team members managed"
+                ]
+            },
+            keyProjects: {
+                coty: {
+                    impact: "Scaled a media team from 1 to 5 offices in 11 months",
+                    details: "40% campaign performance improvement, 45+ markets managed"
+                },
+                marks: {
+                    impact: "35% engagement improvement",
+                    details: "Omnichannel strategy across all business units for M&S"
+                },
+                tasman: {
+                    impact: "3x productivity through frameworks",
+                    details: "Standardised analytics processes across industries"
+                }
             }
         };
 
@@ -851,35 +913,31 @@
             const lowerMessage = message.toLowerCase();
             
             if (lowerMessage.includes('leader') || lowerMessage.includes('different') || lowerMessage.includes('style')) {
-                return `My leadership philosophy centers on democratizing data and empowering teams:\n\n🌟 **Hands-on approach**: I work alongside my team on complex problems - not just delegating\n\n🌟 **Bridge builder**: I translate between technical teams and business stakeholders\n\n🌟 **Growth enabler**: Personalized development plans for each team member\n\n🌟 **Innovation catalyst**: Created knowledge-sharing forums at Tasman\n\nI believe great results come from engaged, empowered teams.`;
+                return `My leadership philosophy centers on democratising data and empowering teams:\n\n🌟 **Hands-on approach**: I work alongside my team on complex problems - not just delegating\n\n🌟 **Bridge builder**: I translate between technical teams and business stakeholders\n\n🌟 **Growth enabler**: Personalised development plans for each team member\n\n🌟 **Innovation catalyst**: Created knowledge-sharing forums at Tasman.`;
             }
             
             if (lowerMessage.includes('coty') || lowerMessage.includes('global expansion')) {
-                return `The Coty global expansion showcased my ability to scale rapidly:\n\n📈 **Challenge**: Scale digital capabilities globally in record time\n\n🎯 **Solution**: Expanded from 1 to 15 offices managing 45+ markets in 11 months\n\n💡 **Results**: 40% campaign performance improvement, unified frameworks still in use\n\nThis taught me how to balance speed with quality when scaling operations.`;
+                return `The Coty global expansion showcased my ability to scale rapidly:\n\n📈 **Challenge**: Scale digital capabilities globally in record time\n\n🎯 **Solution**: Hired different members of the team in different parts of the world. We went from 1 to 5 offices managing 45+ markets in 11 months\n\n💡 **Results**: 40% campaign performance improvement, unified frameworks still in use\n\nThis taught me how to balance speed with quality when scaling operations.`;
             }
             
             if (lowerMessage.includes('tool') || lowerMessage.includes('tech') || lowerMessage.includes('skill')) {
-                return `I leverage a comprehensive tech stack:\n\n📊 **Analytics**: Python, SQL, Tableau, Google Analytics\n📱 **Marketing**: Facebook Ads, Google Ads, Programmatic (DV360)\n☁️ **Cloud**: BigQuery, AWS, GitHub\n🎯 **Specialized**: Attribution modeling, A/B testing platforms\n\nI believe in choosing the right tool for each challenge.`;
+                return `I leverage a comprehensive tech stack:\n\n📊 **Analytics**: Python, SQL, Omni, Looker, and other BI tools and Notebooks, Rudderstack, Segment, Google Analytics\n📱 **Marketing**: Facebook Ads, Google Ads, Programmatic (DV360)\n☁️ **Cloud**: Snowflake, BigQuery \n🎯 **Specialised**: Multi touch attribution modelling, A/B testing approaches, Analytic frameworks for startups and data teams\n\nI believe in choosing the right tool for the right use cases.`;
             }
             
             if (lowerMessage.includes('team') || lowerMessage.includes('build')) {
-                return `Building high-performing teams is central to my success:\n\n👥 Currently leading data analysts and product managers at Tasman\n📈 Scaled teams from 1 to 45+ markets at Coty\n🎯 Focus on growth and development\n💡 Created mentorship programs and knowledge-sharing forums\n\nI hire for potential and create environments where talent thrives.`;
+                return `Building high-performing teams is central to my success:\n\n👥 Currently leading 12+ analysts and data product managers\n📈 Scaled teams from 3 to 15 at Tasman, 1 to 45+ markets at Coty\n🎯 95% retention rate through focus on growth and development\n💡 Created career frameworks and customised programs for marketers, analysts, and engineers \n\nI tend to hire for potential and create environments where talent thrives and motivates others.`;
             }
             
             if (lowerMessage.includes('analytics frameworks') || lowerMessage.includes('tasman')) {
-                return `At Tasman, I've revolutionized how we deliver analytics:\n\n🚀 **Framework Development**: Created reusable solutions for efficient client work\n📊 **Strategy**: Long-term analytics strategy aligned with business objectives\n💡 **Innovation**: Keeping company at forefront of data-driven solutions\n🎯 **Business Development**: Identifying opportunities and generating proposals\n\nThese frameworks enable faster, more impactful client engagements.`;
-            }
-            
-            if (lowerMessage.includes('m&s') || lowerMessage.includes('marks')) {
-                return `The M&S project demonstrated integrated analytics power:\n\n🛍️ **Challenge**: Unify digital presence across all business units\n📊 **Solution**: Comprehensive digital communications and social listening\n✨ **Impact**: 35% engagement improvement\n\nThis showed how analytics bridges online and offline retail.`;
+                return `At Tasman, I've revolutionized how we deliver analytics:\n\n🚀 **Framework Development**: Created reusable solutions serving 100+ users\n📊 **Self-Serve BI**: Democratised data access across organisations driving self-serve analytics for non-technical users\n💡 **Productivity**: 3x improvement through standardisation\n🎯 **Revenue Impact**: 47% growth through predictive modeling\n\nThese frameworks enable faster, more impactful client engagements.`;
             }
             
             if (lowerMessage.includes('challeng') || lowerMessage.includes('difficult')) {
-                return `FOXPlay streaming platform was my most complex challenge:\n\n🎯 **Challenge**: Launch in 6 markets with different regulations\n🔥 **Complexities**: Varied content rights, payment systems, user behaviors\n💡 **Solution**: Built different UX for each market\n📈 **Result**: Successfully launched across all markets\n\nThis proved that constraints often drive the most innovative solutions.`;
+                return `FOXPlay streaming platform was my most complex challenge:\n\n🎯 **Challenge**: Launch in 6 markets with different regulations\n🔥 **Complexities**: Varied content rights, payment systems, user behaviors\n💡 **Solution**: Modular analytics framework adaptable per market\n📈 **Result**: 150% of target subscriptions in year 1\n\nThis proved that constraints often drive the most innovative solutions.`;
             }
             
             if (lowerMessage.includes('experience') || lowerMessage.includes('background')) {
-                return `15+ years bridging analytics and marketing:\n\n🚀 **Current**: Head of Analytics at Tasman (2019-Present)\n📈 **Previous**: VP at Coty, Sr. Manager at Mindshare, Google alum\n🌍 **Global**: Worked across London, Buenos Aires, 45+ markets\n🎓 **Education**: Maths/Stats (Birkbeck), Marketing (UCES), Architecture (UBA)\n\nMy diverse background helps me approach problems creatively.`;
+                return `15+ years bridging analytics and marketing:\n\n🚀 **Current**: Head of Analytics at Tasman (2019-Present)\n📈 **Previous**: VP Media at Beamly/Coty, Sr. Manager at Mindshare, Google alumni\n🌍 **Global**: Worked across London, Buenos Aires, and other 45+ markets\n🎓 **Education**: Maths/Stats (Birkbeck), Marketing (UCES), Architecture (UBA)\n\nMy diverse background helps me approach problems creatively.`;
             }
             
             return `I'd be happy to discuss my experience in analytics leadership, specific projects, or how I approach data-driven transformation. What aspect interests you most?`;
